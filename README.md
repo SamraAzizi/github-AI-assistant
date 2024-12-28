@@ -35,7 +35,7 @@ This project is a GitHub Issues Analyzer that leverages LangChain, Cohere, and A
    git clone <repository-url>
    cd <repository-folder>
 
-```
+
 
 # Usage
 # Running the Application
