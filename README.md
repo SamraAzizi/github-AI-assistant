@@ -37,61 +37,59 @@ This project is a GitHub Issues Analyzer that leverages LangChain, Cohere, and A
 
 
 
-# Usage
-# Running the Application
+"""
+# README
 
-# Start the application:
+Follow the prompts to:
 
-# Run the command in the terminal
-python main.py
+- Update GitHub issues in the vector store.
+- Ask questions about GitHub issues.
+- Save Notes using the note_tool to append text notes to notes.txt.
 
-# Follow the prompts to:
-# - Update GitHub issues in the vector store.
-# - Ask questions about GitHub issues.
+## File Descriptions
 
-# Saving Notes
-# Use the note_tool to append text notes to notes.txt.
+### github.py
+Handles fetching and processing GitHub issues using the GitHub API. Defines the following functions:
 
-# File Descriptions
+- `fetch_github(owner, repo, endpoint)`
+- `fetch_github_issues(owner, repo)`
+- `load_issues(issues)`
 
-## github.py
-# Handles fetching and processing GitHub issues using the GitHub API.
-# Defines the following functions:
-# - fetch_github(owner, repo, endpoint)
-# - fetch_github_issues(owner, repo)
-# - load_issues(issues)
+### main.py
+Coordinates the main application logic:
 
-## main.py
-# Coordinates the main application logic.
-# - Connects to the AstraDB vector store.
-# - Manages issue fetching, storage, and retrieval.
-# - Integrates Cohere for embeddings and text generation.
+- Connects to the AstraDB vector store.
+- Manages issue fetching, storage, and retrieval.
+- Integrates Cohere for embeddings and text generation.
 
-## note.py
-# Defines the note_tool for saving notes to a local file (notes.txt).
+### note.py
+Defines the `note_tool` for saving notes to a local file (`notes.txt`).
 
-# Requirements
-# Ensure you have the following Python libraries installed:
-# - requests
-# - python-dotenv
-# - langchain
-# - cohere
-# - langchain_cohere
-# - langchain_astradb
+## Requirements
+Ensure you have the following Python libraries installed:
 
-# Example Workflow
-# Fetch issues from a repository:
-# - Specify the owner and repository name in main.py.
-# - Store issues in AstraDB Vector Store.
-# - Ask questions about the issues and get AI-generated responses.
-# - Save any relevant notes.
+- requests
+- python-dotenv
+- langchain
+- cohere
+- langchain_cohere
+- langchain_astradb
 
-# Future Enhancements
-# - Add support for fetching more GitHub metadata (e.g., pull requests).
-# - Expand the note-taking tool to support tagging and categorization.
-# - Implement a web interface for easier interaction.
+## Example Workflow
+1. Fetch issues from a repository:
+   - Specify the owner and repository name in `main.py`.
+   - Store issues in AstraDB Vector Store.
+2. Ask questions about the issues and get AI-generated responses.
+3. Save any relevant notes.
 
-# Troubleshooting
-# - Ensure the .env file is correctly configured.
-# - Verify that your GitHub token has sufficient permissions to access repository issues.
-# - Check the network connection if API calls fail.
+## Future Enhancements
+- Add support for fetching more GitHub metadata (e.g., pull requests).
+- Expand the note-taking tool to support tagging and categorization.
+- Implement a web interface for easier interaction.
+
+## Troubleshooting
+- Ensure the `.env` file is correctly configured.
+- Verify that your GitHub token has sufficient permissions to access repository issues.
+- Check the network connection if API calls fail.
+"""
+
