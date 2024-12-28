@@ -86,4 +86,4 @@ Defines the `note_tool` for saving notes to a local file (`notes.txt`).
 - Ensure the `.env` file is correctly configured.
 - Verify that your GitHub token has sufficient permissions to access repository issues.
 - Check the network connection if API calls fail.
-"""
+
