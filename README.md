@@ -38,7 +38,6 @@ This project is a GitHub Issues Analyzer that leverages LangChain, Cohere, and A
 
 
 """
-# README
 
 Follow the prompts to:
 
@@ -65,15 +64,7 @@ Coordinates the main application logic:
 ### note.py
 Defines the `note_tool` for saving notes to a local file (`notes.txt`).
 
-## Requirements
-Ensure you have the following Python libraries installed:
 
-- requests
-- python-dotenv
-- langchain
-- cohere
-- langchain_cohere
-- langchain_astradb
 
 ## Example Workflow
 1. Fetch issues from a repository:
